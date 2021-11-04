@@ -24,7 +24,8 @@ async function driverReport() {
           "manufacturer": vehicle.manufacturer
         });
       }))
-    } catch (error){}
+    } catch (error){} 
+
   }));
   trips.forEach(trip=>{
     if(!drivers[trip.driverID]) drivers[trip.driverID] = {
